@@ -13,11 +13,11 @@ EXE_INC = \
 
 EXE_LIBS = \
     -lengine \
-    -lturbulenceModels \
+    -lreactionThermophysicalModels \
+    -lfluidThermophysicalModels \
     -lcompressibleTurbulenceModels \
     -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lreactionThermophysicalModels \
+    -lturbulenceModels \
     -lspecie \
     -llaminarFlameSpeedModels \
     -lfiniteVolume \

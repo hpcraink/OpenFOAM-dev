@@ -18,14 +18,15 @@ EXE_INC = \
     -I$(LIB_SRC)/regionModels/regionModel/lnInclude
 
 EXE_LIBS = \
-    -lfiniteVolume \
-    -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
+    -lcompressibleTransportModels \
+    -lcompressibleTurbulenceModels \
+    -lturbulenceModels \
     -lsolidThermo \
     -lspecie \
-    -lturbulenceModels \
-    -lcompressibleTurbulenceModels \
     -lradiationModels \
-    -lfvOptions \
     -lregionModels \
-    -lsampling
+    -lsampling \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

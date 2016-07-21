@@ -5,5 +5,8 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ldistributed \
+    -ldecompositionMethods \
+    -ltriSurface \
+    -lsurfMesh \
     -lmeshTools \
-    -ltriSurface
+    -lfileFormats

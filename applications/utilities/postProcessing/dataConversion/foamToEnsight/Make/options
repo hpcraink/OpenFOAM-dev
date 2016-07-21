@@ -9,7 +9,9 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ldynamicMesh \
-    -lsampling \
     -lgenericPatchFields \
+    -lsampling \
+    -lfiniteVolume \
+    -lmeshTools \
     -llagrangian
 

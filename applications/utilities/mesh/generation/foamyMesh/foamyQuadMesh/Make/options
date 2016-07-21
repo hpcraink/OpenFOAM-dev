@@ -29,12 +29,13 @@ EXE_LIBS = \
     -lextrudeModel \
     -lcv2DMesh \
     -lconformalVoronoiMesh \
-    -lmeshTools \
     -lsurfMesh \
     -ledgeMesh \
     -ltriSurface \
     -ldynamicMesh \
     -ldecompositionMethods \
+    -lmeshTools \
     -L$(FOAM_LIBBIN)/dummy -lptscotchDecomp \
     -lsampling \
-    -lfileFormats
+    -lfileFormats \
+    -lfiniteVolume

@@ -16,19 +16,23 @@ EXE_INC = \
     -I$(LIB_SRC)/regionModels/surfaceFilmModels/lnInclude
 
 EXE_LIBS = \
-    -llagrangian \
     -llagrangianIntermediate \
     -llagrangianTurbulence \
-    -lthermophysicalFunctions \
+    -llagrangian \
     -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
-    -lspecie \
-    -lradiationModels \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
     -lincompressibleTransportModels \
-    -lfiniteVolume \
-    -lfvOptions \
-    -lmeshTools \
+    -lturbulenceModels \
+    -lthermophysicalFunctions \
+    -lradiationModels \
+    -lsurfaceFilmModels \
     -lregionModels \
-    -lsurfaceFilmModels
+    -lspecie \
+    -ldistributionModels \
+    -lsampling \
+    -lsurfMesh \
+    -lfileFormats \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

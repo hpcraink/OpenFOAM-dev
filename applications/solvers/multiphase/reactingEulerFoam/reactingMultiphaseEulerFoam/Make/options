@@ -18,6 +18,10 @@ EXE_LIBS = \
     -lreactingEulerianInterfacialModels \
     -lreactingEulerianInterfacialCompositionModels \
     -lmultiphaseReactingTurbulenceModels \
+    -lcompressibleTurbulenceModels \
+    -lcompressibleTransportModels \
+    -lturbulenceModels \
+    -lsolidSpecie \
     -lfiniteVolume \
     -lfvOptions \
     -lmeshTools \

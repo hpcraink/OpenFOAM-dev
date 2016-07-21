@@ -11,11 +11,17 @@ EXE_INC = \
     -I$(LIB_SRC)/finiteVolume/lnInclude
 
 EXE_LIBS = \
-    -lfiniteVolume \
     -ldecompositionMethods \
     -L$(FOAM_LIBBIN)/dummy -lptscotchDecomp \
-    -lmeshTools \
-    -lsurfMesh \
-    -lfileFormats \
+    -ldecompose \
+    -lsnappyHexMesh \
+    -ledgeMesh \
     -ldynamicMesh \
-    -lsnappyHexMesh
+    -lsurfMesh \
+    -ltriSurface \
+    -lmeshTools \
+    -ltriSurface \
+    -lsurfMesh \
+    -lfiniteVolume \
+    -lfileFormats \
+    -llagrangian

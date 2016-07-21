@@ -14,10 +14,12 @@ EXE_INC = \
 EXE_LIBS = \
     -ldriftFluxTransportModels \
     -ldriftFluxRelativeVelocityModels \
+    -lincompressibleTransportModels \
+    -lcompressibleTransportModels \
+    -lcompressibleTurbulenceModels \
+    -ltwoPhaseMixture \
+    -lturbulenceModels \
+    -lsampling \
     -lfiniteVolume \
     -lmeshTools \
-    -lsampling \
-    -lfvOptions \
-    -lcompressibleTransportModels \
-    -lturbulenceModels \
-    -lcompressibleTurbulenceModels
+    -lfvOptions

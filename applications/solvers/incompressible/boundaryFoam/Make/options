@@ -8,10 +8,10 @@ EXE_INC = \
     -I$(LIB_SRC)/sampling/lnInclude
 
 EXE_LIBS = \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
+    -lturbulenceModels \
     -lincompressibleTransportModels \
+    -lsampling \
     -lfiniteVolume \
     -lmeshTools \
-    -lfvOptions \
-    -lsampling
+    -lfvOptions

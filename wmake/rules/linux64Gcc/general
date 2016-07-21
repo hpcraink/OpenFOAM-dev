@@ -1,6 +1,6 @@
 CPP        = cpp -traditional-cpp $(GFLAGS)
 
-PROJECT_LIBS = -l$(WM_PROJECT) -ldl
+PROJECT_LIBS = -l$(WM_PROJECT) $(HOME)/WORK/OpenFOAM/OpenFOAM-dev-mine/platforms/linux64GccDPInt32OptLibO/lib/openmpi-system/libPstream.a $(HOME)/WORK/OpenFOAM/OpenFOAM-dev-mine/platforms/linux64GccDPInt32OptLibO/lib/libOSspecific.o -lmpi -ldl -lz
 
 include $(GENERAL_RULES)/standard
 

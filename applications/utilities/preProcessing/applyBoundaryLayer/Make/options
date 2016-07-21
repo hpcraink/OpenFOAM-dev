@@ -7,9 +7,9 @@ EXE_INC = \
     -I$(LIB_SRC)/meshTools/lnInclude
 
 EXE_LIBS = \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
     -lincompressibleTransportModels \
+    -lturbulenceModels \
     -lgenericPatchFields \
     -lfiniteVolume \
     -lmeshTools \

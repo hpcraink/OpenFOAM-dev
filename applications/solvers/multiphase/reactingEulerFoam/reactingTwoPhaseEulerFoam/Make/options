@@ -14,12 +14,17 @@ EXE_INC = \
     -I$(LIB_SRC)/sampling/lnInclude
 
 EXE_LIBS = \
-    -lreactingPhaseSystem \
-    -lreactingTwoPhaseSystem \
     -lreactingEulerianInterfacialModels \
     -lreactingEulerianInterfacialCompositionModels \
+    -lreactingTwoPhaseSystem \
+    -lreactingPhaseSystem \
     -ltwoPhaseReactingTurbulenceModels \
+    -lcompressibleTurbulenceModels \
+    -lcompressibleTransportModels \
+    -lsolidSpecie \
+    -lturbulenceModels \
     -lfiniteVolume \
     -lfvOptions \
     -lmeshTools \
     -lsampling
+

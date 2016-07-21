@@ -9,6 +9,7 @@ EXE_INC = \
 EXE_LIBS = \
     -lfiniteVolume \
     -lsurfMesh \
-    -lmeshTools \
     -ldynamicMesh \
+    -lfvMotionSolvers \
+    -lmeshTools \
     -lextrudeModel

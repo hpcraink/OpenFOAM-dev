@@ -8,4 +8,6 @@ EXE_LIBS = \
     -lsampling \
     -ltriSurface \
     -lsurfMesh \
-    -lmeshTools
+    -lfileFormats \
+    -lmeshTools \
+    -lfileFormats

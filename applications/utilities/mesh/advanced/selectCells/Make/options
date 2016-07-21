@@ -7,6 +7,9 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ldynamicMesh \
-    -lmeshTools \
     -ltriSurface \
-    -llagrangian
+    -lsurfMesh \
+    -llagrangian \
+    -lmeshTools \
+    -lfiniteVolume \
+    -lfileFormats

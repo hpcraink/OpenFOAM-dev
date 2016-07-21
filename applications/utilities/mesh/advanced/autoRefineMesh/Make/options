@@ -8,4 +8,7 @@ EXE_LIBS = \
     -ldynamicMesh \
     -lmeshTools \
     -ltriSurface \
-    -llagrangian
+    -llagrangian \
+    -lfiniteVolume \
+    -lsurfMesh \
+    -lfileFormats 

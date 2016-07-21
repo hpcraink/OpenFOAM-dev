@@ -13,11 +13,13 @@ EXE_INC = \
     -I$(LIB_SRC)/dynamicFvMesh/lnInclude
 
 EXE_LIBS = \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
+    -lincompressibleTransportModels \
     -lbarotropicCompressibilityModel \
-    -lfiniteVolume \
-    -lfvOptions \
+    -ltwoPhaseMixture \
+    -lturbulenceModels \
     -ldynamicMesh \
     -ldynamicFvMesh \
-    -lmeshTools
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

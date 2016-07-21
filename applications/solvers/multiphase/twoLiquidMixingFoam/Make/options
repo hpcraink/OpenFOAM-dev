@@ -12,8 +12,11 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ltwoPhaseMixture \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
+    -lincompressibleTransportModels \
+    -ltwoPhaseMixtureThermo \
+    -lmultiphaseMixtureThermo \
+    -lturbulenceModels \
     -lfiniteVolume \
     -lfvOptions \
     -lmeshTools

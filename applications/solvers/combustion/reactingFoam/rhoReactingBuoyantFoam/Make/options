@@ -16,16 +16,16 @@ EXE_INC = \
 
 
 EXE_LIBS = \
-    -lfiniteVolume \
-    -lfvOptions \
-    -lmeshTools \
-    -lsampling \
-    -lturbulenceModels \
+    -lchemistryModel \
     -lcompressibleTurbulenceModels \
     -lreactionThermophysicalModels \
     -lspecie \
     -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
-    -lchemistryModel \
+    -lturbulenceModels \
+    -lcombustionModels \
+    -lsampling \
     -lODE \
-    -lcombustionModels
+    -lfiniteVolume \
+    -lfvOptions \
+    -lmeshTools

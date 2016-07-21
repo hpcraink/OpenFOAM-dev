@@ -15,8 +15,8 @@ EXE_LIBS = \
     -lmultiphaseInterFoam \
     -linterfaceProperties \
     -lincompressibleTransportModels \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
+    -lturbulenceModels \
     -lfiniteVolume \
     -lfvOptions \
     -lmeshTools \

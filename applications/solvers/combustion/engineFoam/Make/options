@@ -13,15 +13,15 @@ EXE_INC = \
     -I$(LIB_SRC)/thermophysicalModels/laminarFlameSpeed/lnInclude
 
 EXE_LIBS = \
-    -lfiniteVolume \
-    -lfvOptions \
     -lsampling \
-    -lmeshTools \
     -lengine \
-    -lturbulenceModels \
+    -lreactionThermophysicalModels \
+    -lfluidThermophysicalModels \
     -lcompressibleTurbulenceModels \
     -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lreactionThermophysicalModels \
+    -lturbulenceModels \
     -lspecie \
-    -llaminarFlameSpeedModels
+    -llaminarFlameSpeedModels \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions \

@@ -20,14 +20,14 @@ EXE_INC = \
 
 EXE_LIBS = \
     -lengine \
-    -lmeshTools \
-    -lturbulenceModels \
+    -lreactionThermophysicalModels \
+    -lfluidThermophysicalModels \
     -lcompressibleTurbulenceModels \
     -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lreactionThermophysicalModels \
+    -lturbulenceModels \
     -lspecie \
     -llaminarFlameSpeedModels \
     -lfiniteVolume \
+    -lmeshTools \
     -ldynamicFvMesh \
     -lfvOptions

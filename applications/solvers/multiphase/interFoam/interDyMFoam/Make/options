@@ -16,8 +16,12 @@ EXE_INC = \
 
 EXE_LIBS = \
     -limmiscibleIncompressibleTwoPhaseMixture \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
+    -lincompressibleTransportModels \
+    -lturbulenceModels \
+    -linterfaceProperties \
+    -ltwoPhaseProperties \
+    -ltwoPhaseMixture \
     -lfiniteVolume \
     -ldynamicMesh \
     -ldynamicFvMesh \

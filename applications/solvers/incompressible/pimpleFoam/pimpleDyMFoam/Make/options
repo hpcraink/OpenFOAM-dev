@@ -12,13 +12,13 @@ EXE_INC = \
     -I$(LIB_SRC)/meshTools/lnInclude \
 
 EXE_LIBS = \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
     -lincompressibleTransportModels \
-    -lfiniteVolume \
-    -lfvOptions \
+    -lturbulenceModels \
     -lsampling \
     -ldynamicFvMesh \
     -ltopoChangerFvMesh \
     -ldynamicMesh \
+    -lfiniteVolume \
+    -lfvOptions \
     -lmeshTools

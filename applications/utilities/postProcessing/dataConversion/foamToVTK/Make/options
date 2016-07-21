@@ -9,4 +9,6 @@ EXE_LIBS = \
     -lfoamToVTK \
     -ldynamicMesh \
     -llagrangian \
+    -lfiniteVolume \
+    -lmeshTools \
     -lgenericPatchFields

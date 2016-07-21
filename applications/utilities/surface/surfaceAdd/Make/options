@@ -3,4 +3,6 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ltriSurface \
+    -lsurfMesh \
+    -lfileFormats \
     -lmeshTools

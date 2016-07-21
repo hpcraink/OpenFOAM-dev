@@ -32,31 +32,35 @@ EXE_INC = \
     -I$(LIB_SRC)/meshTools/lnInclude
 
 EXE_LIBS = \
-    -lturbulenceModels \
+    -lSLGThermo \
+    -lfluidThermophysicalModels \
     -lcompressibleTurbulenceModels \
-    -llagrangian \
+    -lcompressibleTransportModels \
+    -lturbulenceModels \
+    -llagrangianSpray \
     -llagrangianIntermediate \
     -llagrangianTurbulence \
-    -llagrangianSpray \
+    -llagrangian \
     -lspecie \
-    -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lliquidProperties \
     -lliquidMixtureProperties \
-    -lsolidProperties \
+    -lliquidProperties \
     -lsolidMixtureProperties \
+    -lsolidProperties \
     -lthermophysicalFunctions \
     -lreactionThermophysicalModels \
-    -lSLGThermo \
+    -ldistributionModels \
     -lchemistryModel \
     -lradiationModels \
     -lODE \
-    -lregionModels \
+    -lsampling \
     -lsurfaceFilmModels \
+    -lregionModels \
     -lcombustionModels \
-     -lfiniteVolume \
-    -lfvOptions \
     -ldynamicFvMesh \
     -ltopoChangerFvMesh \
     -ldynamicMesh \
-    -lmeshTools
+    -lsurfMesh \
+    -lfileFormats \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

@@ -16,11 +16,12 @@ EXE_INC = \
 
 EXE_LIBS = \
     -lengine \
-    -lturbulenceModels \
+    -lfluidThermophysicalModels \
     -lcompressibleTurbulenceModels \
     -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
+    -lturbulenceModels \
     -lspecie \
     -lfiniteVolume \
     -lmeshTools \
     -lfvOptions
+

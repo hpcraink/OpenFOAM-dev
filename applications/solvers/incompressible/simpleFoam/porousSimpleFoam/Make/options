@@ -10,10 +10,10 @@ EXE_INC = \
 
 
 EXE_LIBS = \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
     -lincompressibleTransportModels \
+    -lturbulenceModels \
+    -lsampling \
     -lfiniteVolume \
     -lmeshTools \
-    -lfvOptions \
-    -lsampling
+    -lfvOptions

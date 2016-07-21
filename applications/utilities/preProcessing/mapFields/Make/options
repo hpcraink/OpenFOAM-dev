@@ -6,7 +6,7 @@ EXE_INC = \
 
 EXE_LIBS = \
     -lsampling \
-    -lmeshTools \
     -llagrangian \
     -lfiniteVolume \
-    -lgenericPatchFields
+    -lgenericPatchFields \
+    -lmeshTools

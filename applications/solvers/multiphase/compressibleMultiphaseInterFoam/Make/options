@@ -13,12 +13,12 @@ EXE_INC = \
 
 EXE_LIBS = \
     -lmultiphaseMixtureThermo \
-    -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
+    -lcompressibleTransportModels \
     -lspecie \
     -linterfaceProperties \
-    -lturbulenceModels \
     -lcompressibleTurbulenceModels \
+    -lturbulenceModels \
     -lfiniteVolume \
-    -lfvOptions \
-    -lmeshTools
+    -lmeshTools \
+    -lfvOptions

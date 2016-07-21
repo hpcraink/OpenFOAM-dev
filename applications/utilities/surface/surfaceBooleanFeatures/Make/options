@@ -4,6 +4,8 @@ EXE_INC = \
     -I$(LIB_SRC)/meshTools/lnInclude
 
 EXE_LIBS = \
-    -ltriSurface \
     -ledgeMesh \
+    -ltriSurface \
+    -lsurfMesh \
+    -lfileFormats \
     -lmeshTools

@@ -20,15 +20,15 @@ EXE_INC = \
 
 
 EXE_LIBS = \
-    -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
+    -lcompressibleTransportModels \
+    -lcompressibleTurbulenceModels \
+    -lturbulenceModels \
     -lsolidThermo \
     -lspecie \
-    -lturbulenceModels \
-    -lcompressibleTurbulenceModels \
-    -lmeshTools \
-    -lfiniteVolume \
     -lradiationModels \
-    -lfvOptions \
     -lregionModels \
-    -lsampling
+    -lsampling \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

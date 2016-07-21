@@ -29,28 +29,31 @@ EXE_INC = \
 
 
 EXE_LIBS = \
-    -lfiniteVolume \
-    -lmeshTools \
-    -lturbulenceModels \
+    -lSLGThermo \
+    -lfluidThermophysicalModels \
     -lcompressibleTurbulenceModels \
-    -llagrangian \
+    -lcompressibleTransportModels \
+    -lturbulenceModels \
     -llagrangianIntermediate \
     -llagrangianTurbulence \
-    -lspecie \
-    -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lliquidProperties \
+    -llagrangian \
     -lliquidMixtureProperties \
-    -lsolidProperties \
+    -lliquidProperties \
     -lsolidMixtureProperties \
+    -lsolidProperties \
     -lthermophysicalFunctions \
+    -ldistributionModels \
     -lreactionThermophysicalModels \
-    -lSLGThermo \
     -lchemistryModel \
     -lradiationModels \
+    -lspecie \
     -lODE \
-    -lregionModels \
     -lsurfaceFilmModels \
+    -lregionModels \
     -lcombustionModels \
-    -lfvOptions \
-    -lsampling
+    -lsampling \
+    -lsurfMesh \
+    -lfileFormats \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

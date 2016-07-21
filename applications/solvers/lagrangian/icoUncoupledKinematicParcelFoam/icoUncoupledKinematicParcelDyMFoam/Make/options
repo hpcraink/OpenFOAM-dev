@@ -20,22 +20,26 @@ EXE_INC = \
 
 
 EXE_LIBS = \
-    -llagrangian \
     -llagrangianIntermediate \
     -llagrangianTurbulence \
-    -lthermophysicalFunctions \
-    -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lspecie \
-    -lradiationModels \
-    -lturbulenceModels \
+    -llagrangian \
     -lincompressibleTurbulenceModels \
     -lincompressibleTransportModels \
-    -lfiniteVolume \
-    -lfvOptions \
-    -lmeshTools \
-    -lregionModels \
+    -lcompressibleTransportModels \
+    -lfluidThermophysicalModels \
+    -lturbulenceModels \
+    -lthermophysicalFunctions \
+    -lspecie \
+    -lradiationModels \
     -lsurfaceFilmModels \
+    -lregionModels \
     -ldynamicMesh \
     -ldynamicFvMesh \
-    -ltopoChangerFvMesh
+    -ltopoChangerFvMesh \
+    -ldistributionModels \
+    -lsampling \
+    -lsurfMesh \
+    -lfileFormats \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions

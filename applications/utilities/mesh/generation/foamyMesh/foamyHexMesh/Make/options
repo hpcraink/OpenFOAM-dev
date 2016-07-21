@@ -28,11 +28,12 @@ EXE_INC = \
 EXE_LIBS = \
     ${CGAL_LIBS} \
     -lconformalVoronoiMesh \
-    -lmeshTools \
     -ldecompositionMethods \
     -L$(FOAM_LIBBIN)/dummy -lptscotchDecomp \
     -ledgeMesh \
+    -ldynamicMesh \
+    -lmeshTools \
     -lfileFormats \
     -ltriSurface \
-    -ldynamicMesh \
-    -lsampling
+    -lsampling \
+    -lfiniteVolume

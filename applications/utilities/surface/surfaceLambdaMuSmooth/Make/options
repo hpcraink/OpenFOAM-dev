@@ -4,4 +4,6 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ledgeMesh \
-    -lsurfMesh
+    -lsurfMesh \
+    -lfileFormats \
+    -lmeshTools

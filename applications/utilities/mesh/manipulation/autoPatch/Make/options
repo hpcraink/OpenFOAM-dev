@@ -4,4 +4,8 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ldynamicMesh \
-    -lmeshTools
+    -lmeshTools \
+    -ltriSurface \
+    -lfiniteVolume \
+    -lfileFormats \
+    -lsurfMesh

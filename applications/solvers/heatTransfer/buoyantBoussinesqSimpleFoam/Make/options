@@ -9,10 +9,10 @@ EXE_INC = \
     -I$(LIB_SRC)/meshTools/lnInclude \
 
 EXE_LIBS = \
-    -lturbulenceModels \
+    -lradiationModels \
     -lincompressibleTurbulenceModels \
     -lincompressibleTransportModels \
-    -lradiationModels \
+    -lturbulenceModels \
     -lfiniteVolume \
     -lsampling \
     -lmeshTools \

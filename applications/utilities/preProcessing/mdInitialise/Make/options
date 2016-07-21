@@ -8,11 +8,11 @@ EXE_INC = \
     -I$(LIB_SRC)/finiteVolume/lnInclude
 
 EXE_LIBS = \
-    -lmeshTools \
-    -ldynamicMesh \
-    -lfiniteVolume \
-    -llagrangian \
     -lmolecule \
     -lpotential \
-    -lmolecularMeasurements
+    -lmolecularMeasurements \
+    -ldynamicMesh \
+    -lfiniteVolume \
+    -lmeshTools \
+    -llagrangian
 

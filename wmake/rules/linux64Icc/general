@@ -1,6 +1,6 @@
 CPP        = /lib/cpp -traditional-cpp $(GFLAGS)
 
-PROJECT_LIBS = -l$(WM_PROJECT) -ldl
+PROJECT_LIBS = -l$(WM_PROJECT) -L/home/rkeller/WORK/OpenFOAM/OpenFOAM-v3.0+/platforms/linux64IccDPInt32OptLibO/lib/openmpi-system/ -lPstream /home/rkeller/WORK/OpenFOAM/OpenFOAM-v3.0+/platforms/linux64IccDPInt32OptLibO/lib/libOSspecific.o -pthread -Wl,-rpath -Wl,/apps/libs/openmpi/1.10.2-intel16.0.1/lib -Wl,--enable-new-dtags -L/apps/libs/openmpi/1.10.2-intel16.0.1/lib -lmpi -ldl -lz
 
 include $(GENERAL_RULES)/standard
 

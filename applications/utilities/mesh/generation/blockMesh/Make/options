@@ -5,5 +5,7 @@ EXE_INC = \
 
 EXE_LIBS = \
     -lblockMesh \
-    -lmeshTools \
-    -ldynamicMesh
+    -ldynamicMesh \
+    -lfiniteVolume \
+    -lfvOptions \
+    -lmeshTools

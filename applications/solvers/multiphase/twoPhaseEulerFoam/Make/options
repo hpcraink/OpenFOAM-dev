@@ -16,13 +16,14 @@ EXE_INC = \
 EXE_LIBS = \
     -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
-    -lspecie \
-    -lturbulenceModels \
     -lcompressibleTurbulenceModels \
     -lphaseCompressibleTurbulenceModels \
     -lincompressibleTransportModels \
     -lcompressibleTwoPhaseSystem \
     -lcompressibleEulerianInterfacialModels \
+    -lcompressibleTurbulenceModels \
+    -lturbulenceModels \
+    -lspecie \
     -lfiniteVolume \
     -lfvOptions \
     -lmeshTools \

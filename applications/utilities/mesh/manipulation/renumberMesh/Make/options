@@ -9,10 +9,10 @@ EXE_INC = \
     -I$(LIB_SRC)/parallel/decompose/decompositionMethods/lnInclude
 
 EXE_LIBS = \
-    -lmeshTools \
     -ldynamicMesh \
-    -lfiniteVolume \
     -lgenericPatchFields \
     -lrenumberMethods \
     $(LINK_FLAGS) \
-    -ldecompositionMethods -L$(FOAM_LIBBIN)/dummy -lmetisDecomp -lscotchDecomp
+    -ldecompositionMethods -L$(FOAM_LIBBIN)/dummy -lmetisDecomp -lscotchDecomp \
+    -lmeshTools \
+    -lfiniteVolume

@@ -12,15 +12,15 @@ EXE_INC = \
     -I$(LIB_SRC)/meshTools/lnInclude
 
 EXE_LIBS = \
+    -lrhoCentralFoam \
+    -lfluidThermophysicalModels \
+    -lcompressibleTransportModels \
+    -lcompressibleTurbulenceModels \
+    -lturbulenceModels \
+    -lspecie \
+    -ldynamicFvMesh \
+    -ldynamicMesh \
+    -ltopoChangerFvMesh \
     -lfiniteVolume \
     -lfvOptions \
-    -lcompressibleTransportModels \
-    -lfluidThermophysicalModels \
-    -lspecie \
-    -lrhoCentralFoam \
-    -lturbulenceModels \
-    -lcompressibleTurbulenceModels \
-    -ldynamicMesh \
-    -ldynamicFvMesh \
-    -ltopoChangerFvMesh \
     -lmeshTools

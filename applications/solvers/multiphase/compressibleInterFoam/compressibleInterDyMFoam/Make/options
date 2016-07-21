@@ -14,16 +14,16 @@ EXE_INC = \
 
 EXE_LIBS = \
     -ltwoPhaseMixtureThermo \
-    -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
+    -lcompressibleTransportModels \
     -lspecie \
-    -ltwoPhaseMixture \
-    -ltwoPhaseProperties \
     -linterfaceProperties \
-    -lturbulenceModels \
+    -ltwoPhaseProperties \
+    -ltwoPhaseMixture \
     -lcompressibleTurbulenceModels \
+    -lturbulenceModels \
     -ldynamicMesh \
-    -lmeshTools \
     -ldynamicFvMesh \
     -lfiniteVolume \
+    -lmeshTools \
     -lfvOptions

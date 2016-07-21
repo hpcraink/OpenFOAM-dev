@@ -16,8 +16,8 @@ EXE_LIBS = \
     -linterfaceProperties \
     -ltwoPhaseProperties \
     -lincompressibleTransportModels \
-    -lturbulenceModels \
     -lincompressibleTurbulenceModels \
+    -lturbulenceModels \
     -lfiniteVolume \
     -lmeshTools \
     -lfvOptions \
