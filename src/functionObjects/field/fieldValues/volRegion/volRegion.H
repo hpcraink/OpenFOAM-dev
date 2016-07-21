@@ -28,10 +28,11 @@ Group
     grpFieldFunctionObjects
 
 Description
-    This function object provides a 'cell region' variant of the fieldValues
-    function object.  Given a list of user-specified fields and a selection
-    of mesh cells, a number of operations can be performed, such as sums,
-    averages and integrations.
+    Provides a 'cell region' variant of the fieldValues function object.
+
+    Given a list of user-specified fields and a selection of mesh cells, a
+    number of operations can be performed, such as sums, averages and
+    integrations.
 
 
     Example of function object specification:
@@ -39,14 +40,18 @@ Description
     volRegion1
     {
         type            volRegion;
-        libs ("libfieldFunctionObjects.so");
-        ...
+        libs            ("libfieldFunctionObjects.so");
+
         log             true;
+        writeControl    writeTime;
         writeFields     true;
+
         regionType      cellZone;
         name            c0;
         operation       volAverage;
+
         weightField     alpha1;
+
         fields
         (
             p

@@ -28,29 +28,34 @@ Group
     grpFieldFunctionObjects
 
 Description
-    This function object generates streamline data by sampling a set of
-    user-specified fields along a particle track, transported by a
-    user-specified velocity field, constrained to a patch.
+    Generates streamline data by sampling a set of user-specified fields along a
+    particle track, transported by a user-specified velocity field, constrained
+    to a patch.
 
     Example of function object specification:
     \verbatim
     wallBoundedStreamLine1
     {
         type            wallBoundedStreamLine;
-        libs ("libfieldFunctionObjects.so");
-        ...
+        libs            ("libfieldFunctionObjects.so");
+
+        writeControl    writeTime;
+
         setFormat       vtk;
         U               UNear;
         trackForward    yes;
+
         fields
         (
             UNear
             p
         );
+
         lifeTime        10000;
         trackLength     1e-3;
         nSubCycle       5;
         cloudName       particleTracks;
+
         seedSampleSet   patchSeed;
         patchSeedCoeffs
         {

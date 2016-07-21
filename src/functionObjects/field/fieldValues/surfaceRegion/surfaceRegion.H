@@ -28,28 +28,56 @@ Group
     grpFieldFunctionObjects
 
 Description
-    This function object provides a 'face regionType' variant of the fieldValues
-    function object.  Given a list of user-specified fields and a selection
-    of mesh (or general surface) faces, a number of operations can be
-    performed, such as sums, averages and integrations.
+    Provides a 'face regionType' variant of the fieldValues function object.
+
+    Given a list of user-specified fields and a selection of mesh (or general
+    surface) faces, a number of operations can be performed, such as sums,
+    averages and integrations.
 
     For example, to calculate the volumetric or mass flux across a patch,
     apply the 'sum' operator to the flux field (typically \c phi)
 
-    Example of function object specification:
+    Examples of function object specification:
     \verbatim
+    movingWallPatch
+    {
+        type            surfaceRegion;
+        libs            ("libfieldFunctionObjects.so");
+
+        log             true;
+        writeControl    writeTime;
+        writeFields     true;
+
+        regionType      patch;
+        name            movingWall;
+
+        operation       areaAverage;
+
+        fields
+        (
+            p
+            phi
+            U
+        );
+    }
+
     surfaceRegion1
     {
         type            surfaceRegion;
-        libs ("libfieldFunctionObjects.so");
-        ...
-        log             yes;
+        libs            ("libfieldFunctionObjects.so");
+
+        log             true;
+        writeControl    writeTime;
         writeFields     true;
+
         surfaceFormat   none;
         regionType      faceZone;
         name            f0;
+
         operation       sum;
+
         weightField     alpha1;
+
         fields
         (
             p
@@ -112,7 +140,7 @@ Note
       faces
     - the `oriented' entries relate to mesh-oriented fields, such as the
       flux, phi.  These fields will be oriented according to the face normals.
-    - using \c sampledSurfaces:
+    - using \c sampledSurface:
         - not available for surface fields
         - if interpolate=true they use \c interpolationCellPoint
           otherwise they use cell values
@@ -369,6 +397,9 @@ public:
 
         //- Return the list of +1/-1 representing face flip map
         inline const labelList& faceSign() const;
+
+        //- Return the output directory
+        inline fileName outputDir() const;
 
         //- Templated helper function to output field values
         template<class Type>

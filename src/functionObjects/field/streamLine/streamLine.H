@@ -28,17 +28,18 @@ Group
     grpFieldFunctionObjects
 
 Description
-    This function object generates streamline data by sampling a set of
-    user-specified fields along a particle track, transported by a
-    user-specified velocity field.
+    Generates streamline data by sampling a set of user-specified fields along a
+    particle track, transported by a user-specified velocity field.
 
     Example of function object specification:
     \verbatim
     streamLine1
     {
         type            streamLine;
-        libs ("libfieldFunctionObjects.so");
-        ...
+        libs            ("libfieldFunctionObjects.so");
+
+        writeControl    writeTime;
+
         setFormat       vtk;
         trackForward    yes;
         fields
